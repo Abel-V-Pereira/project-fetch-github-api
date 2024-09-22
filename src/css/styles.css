@@ -36,9 +36,7 @@ main {
 
 .container {
     width: 60%;
-    /* se for uma tela menor que 980px vai se adaptar a 70% */
     max-width: 960px;
-    /* quando chegar em 980px para de aumentar */
     box-shadow: rgba(0, 0, 0, 0.3) 0px 25px 50px -12px;
     background-color: #fff;
     display: flex;
@@ -111,7 +109,7 @@ main {
     border: 10px solid hotpink;
 }
 
-.container .profile-data .info h1 {
+.container .profile-data .info a {
     font-size: 20px;
     margin-bottom: 20px;
     font-weight: 700;
@@ -121,6 +119,25 @@ main {
     font-size: 15px;
     font-weight: 400;
     line-height: 23px;
+}
+
+.container .profile-data .info .follow {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10% 0;
+    border-bottom: 1px solid rgb(213, 219, 224);
+}
+
+.container .profile-data .info .follow h4{
+    margin-bottom: 25%;
+}
+
+.container .profile-data .info .follow p{
+    background-color: hotpink;
+    font-weight: 700;
+    border-radius: 50%;
+    padding: 15%;
 }
 
 /* REPOSITORIES */
@@ -143,6 +160,7 @@ main {
     display: block;
     border-radius: 7px;
     transition: 0.3s ease-in-out;
+    text-align: left;
 }
 
 .container .profile-data .repositories ul li a:hover {
@@ -152,6 +170,43 @@ main {
 
 .container .profile-data.hide {
     display: none;
+}
+
+.container .profile-data .repositories ul li a .repo-itens {
+    display: flex;
+    gap: 6px;
+    margin-top: 10px;
+}
+
+.container .profile-data .repositories ul li a .repo-itens p {
+    background-color: rgb(150, 94, 206);
+    padding: 5px;
+    border-radius: 5px;
+}
+
+.container .profile-data .repositories ul li a h3{
+    font-weight: 900;
+}
+
+/* EVENTS */
+
+.container .profile-data .events {
+    width: 100%;
+}
+
+.container .profile-data .events li{
+    margin: 4%;
+    display: flex;
+    justify-content: center;
+}
+
+.container .profile-data .events h4{
+    margin-right: 2%;
+    font-weight: 900;
+}
+
+.container .profile-data .events p{
+    margin-left: 1%;
 }
 
 @media (max-width: 1280px) {
